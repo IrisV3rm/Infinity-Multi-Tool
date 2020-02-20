@@ -25,3 +25,23 @@ F:\Sources\C#\InfinityMultiTool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\
 F:\Sources\C#\InfinityMultiTool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\VertexFramework.dll
 F:\Sources\C#\InfinityMultiTool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\websocket-sharp-with-proxy-support.dll
 F:\Sources\C#\InfinityMultiTool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Costura.xml
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.csprojAssemblyReference.cache
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.NitroSnipin.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.TopMostBoi.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.DiscCacheDown.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.HashGen.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.Credits.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.Notice.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.AssetDownloader.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.Launcher.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity_Multi_Tool.Properties.Resources.resources
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.csproj.GenerateResource.cache
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.exe
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.pdb
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Infinity Multi Tool.exe.config
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Infinity Multi Tool.exe
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Infinity Multi Tool.pdb
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Newtonsoft.Json.xml
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\bin\x64\Release\Newtonsoft.Json.Schema.xml
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.csproj.Fody.CopyLocal.cache
+F:\Sources\C#\InfinityMultiTool\Infinity-Multi-Tool\Infinity Multi Tool\Infinity Multi Tool\obj\x64\Release\Infinity Multi Tool.csproj.CopyComplete
