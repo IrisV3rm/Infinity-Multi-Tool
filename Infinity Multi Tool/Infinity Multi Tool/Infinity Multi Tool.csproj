@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9E01BA3-81F4-4B95-8245-82DD9D68E1F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Infinity_Multi_Tool</RootNamespace>
+    <AssemblyName>Infinity Multi Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Anarchy, Version=0.6.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Anarchy-wrapper.0.6.3.1\lib\net47\Anarchy.dll</HintPath>
+    </Reference>
+    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.11\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VertexFramework">
+      <HintPath>..\..\..\VertexFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp-with-proxy-support, Version=1.0.2.28248, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\websocket-sharp-with-proxy-support.1.9.1\lib\net35-client\websocket-sharp-with-proxy-support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tools\NitroSnipin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\NitroSnipin.Designer.cs">
+      <DependentUpon>NitroSnipin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TopMostBoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\TopMostBoi.Designer.cs">
+      <DependentUpon>TopMostBoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DiscCacheDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\DiscCacheDown.Designer.cs">
+      <DependentUpon>DiscCacheDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\HashGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\HashGen.Designer.cs">
+      <DependentUpon>HashGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Notice.Designer.cs">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AssetDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\AssetDownloader.Designer.cs">
+      <DependentUpon>AssetDownloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Forms.cs" />
+    <Compile Include="Launcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launcher.Designer.cs">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Tools\NitroSnipin.resx">
+      <DependentUpon>NitroSnipin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TopMostBoi.resx">
+      <DependentUpon>TopMostBoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\DiscCacheDown.resx">
+      <DependentUpon>DiscCacheDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\HashGen.resx">
+      <DependentUpon>HashGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Notice.resx">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\AssetDownloader.resx">
+      <DependentUpon>AssetDownloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launcher.resx">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MacClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MacHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MacMin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopMostEnable.png" />
+    <None Include="Resources\NitroSniperSelector.png" />
+    <None Include="Resources\MD5Gen.png" />
+    <None Include="Resources\Title Credits.png" />
+    <None Include="Resources\PantsSelector.png" />
+    <None Include="Resources\ShirtsSelector.png" />
+    <None Include="Resources\Title ASSET.png" />
+    <None Include="Resources\MultipleRobloxInstances.png" />
+    <None Include="Resources\Tool Selector Template.png" />
+    <None Include="Resources\Title.png" />
+    <None Include="Resources\Infinity.png" />
+    <None Include="Resources\CheckForUopdates.png" />
+    <None Include="Resources\LaunchRed.png" />
+    <None Include="Resources\LaunchGreen.png" />
+    <None Include="Resources\ButtonBackground.png" />
+    <None Include="Resources\DownloadTools.png" />
+    <None Include="Resources\AssetDownload.png" />
+    <None Include="Resources\!.png" />
+    <None Include="Resources\AnimationsSelector.png" />
+    <None Include="Resources\FaceSelector.png" />
+    <None Include="Resources\AccessoriesSelector.png" />
+    <None Include="Resources\AudioSelector.png" />
+    <Content Include="NewICO.ico" />
+    <None Include="Resources\FPSUnlocker.png" />
+    <None Include="Resources\Credits.png" />
+    <None Include="Resources\DiscCacheSelector.png" />
+    <Content Include="Resources\MacHoverMin.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.0.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.0.0\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.0.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.0.0\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
+  </Target>
+</Project>
